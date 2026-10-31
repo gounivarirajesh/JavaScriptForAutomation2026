@@ -1,0 +1,634 @@
+
+Datatype Assignment
+====================
+
+1. Identify the datatype (Completed)
+Create variables for the following values and identify their datatype:
+- 25
+- "JavaScript"
+- true
+- undefined
+- null
+- 123.45
+- 12345678901234567890n
+- Symbol("id")
+Task: Print both the value and its datatype.
+
+
+2. Create Variables of Different Datatypes
+Create one variable for each of the following datatypes:
+- String
+- Number
+- Boolean
+- Undefined
+- Null
+- BigInt
+- Symbol
+- Object
+Print all variables
+
+3. Predict the Output
+Without running the code, predict the output:
+console.log(typeof 100); ->number
+console.log(typeof "100");->string
+console.log(typeof true);->boolean
+console.log(typeof undefined);-->undefined
+console.log(typeof null);-->object
+console.log(typeof 100n);-->bigInt
+
+Then execute the program and compare your answers.
+
+4. Student Information
+Create variables to store:
+- Student name
+- Student age
+- Student percentage
+- Whether the student has completed the course
+- Student's grade
+Use appropriate JavaScript datatypes.
+
+5.Create two variables:
+let userName;
+let userEmail = null;
+Print both values and their datatypes.
+Then answer:
+1. What is the difference between undefined and null?
+2. What does typeof userName return?
+3. What does typeof userEmail return?
+4. Why is typeof null considered unusual in JavaScript?
+----------------------------------------------------------
+Assignments On Operators
+=============================
+Guess the output?
+---------------------
+1.console.log(1 + "2" + 3);
+2.console.log(1 + 2 + "3");
+3.console.log("5" * true);
+4.console.log(10 > 5 > 1);
+5.let a = 2;
+    let b = a++ + ++a;
+    console.log(a, b);
+
+6.let a = 3;
+console.log(a++ + a++ + ++a);
+
+7.console.log(5 * 2 == "10");
+
+8.
+let x = 1;
+let y = ++x + x++ + x;
+console.log(x, y);
+
+9.console.log(10 > 5 && 20 < 30);
+
+10.console.log(null || undefined || "Playwright");
+
+-----------------------------------------------------------------
+JavaScript Practice: Type Coercion & Explicit Conversion
+===========================================================
+
+Problem 1 — UI Price and Quantity
+A product page returns the following values as strings:
+let price = "500";
+let quantity = "3";
+Calculate the total price.
+
+Expected Output:
+1500
+
+Problem 2 — UI Price + Tax
+The UI returns:
+let price = "1000";
+let tax = "200";
+Calculate the final price.
+
+Expected Output:
+1200
+
+Problem 3 — Understand + Coercion
+Consider:
+let actual = "100";
+let expected = 20;
+What will be the output of:
+console.log(actual + expected);
+
+Problem 4 — Understand - Coercion
+Consider:
+let actual = "100";
+let expected = 20;
+What will be the output of:
+console.log(actual - expected);
+
+Problem 5 — UI Value and Assertion
+A UI displays:
+100
+The automation code receives it as:
+let actualPrice = "100";
+let expectedPrice = 100;
+Check the result of:
+console.log(actualPrice == expectedPrice);
+console.log(actualPrice === expectedPrice);
+
+Problem 6 — Fix the Assertion
+The following automation code is failing:
+let actualPrice = "500";
+let expectedPrice = 500;
+console.log(actualPrice === expectedPrice);
+
+Modify the code so that the assertion gives:
+true
+
+Problem 7 — Environment Variable
+An automation framework reads the timeout from an environment variable:
+let timeout = "30000";
+Convert it into a number and print:
+The value
+Its data type
+
+Expected Output:
+30000
+number
+
+Problem 8 — Order ID
+An API returns:
+let orderId = 12345;
+Convert the order ID into a string and create:
+ORDER-12345
+
+Problem 9 — Boolean API Value
+An API returns:
+let status = "true";
+Convert this value into an actual Boolean.
+
+Expected Output:
+true
+boolean
+
+Problem 10 — Input Field Value
+A Playwright test retrieves a quantity from an input field:
+let quantity = "5";
+The expected quantity is:
+let expectedQuantity = 5;
+
+Problem 11 — Calculate Cart Total
+An e-commerce application provides:
+let price = "799";
+let quantity = "2";
+let discount = "100";
+Calculate:
+(price × quantity) - discount
+
+Expected Output:
+1498
+
+Conditional Satements Program
+=================================
+Assignment1: 
+Problem: 
+Write a JavaScript program to check whether a number is even or odd. 
+
+Assignment2: 
+Problem: 
+Print the day of the week based on number (1–7). 
+What you will use here? If-else or switch case? 
+
+Assignment 3: 
+Problem: Write .js script that evaluates a test case result based on HTTP 
+response status code the program should use Nester if..else statements to 
+determine result message.  
+Instructions:  
+1.create a new file named testResult.js Inside the file declare variable to store 
+status code Let responseCode=200;  
+2.use if else Nested statements to evaluate response code and print status 
+message  
+3.Use the following logic for result evaluation: I 
+f response Code is 100-199→print: Informational  
+If response Code is 200-299→print: successful  
+If response Code is 300-399→print: Redirectional  
+If response Code is 400-499 →print: Client Error 
+If response Code is 500-599→print: Server Error For any other code →print 
+Unkown Status code  
+4.Run script using node testResult.js  
+
+Assignment 4
+Problem:  Write a script that suggests what clothing to wear based on the 
+current temperature The program should use if...else or if...else if statements to 
+determine the suggestion.  
+Instructions: 1. Create a new file named weather.js. Inside the file, declare a 
+variable to store the temperature,  
+for example: let temperature = 28;  
+2. Use if...else or if...else if statements to decide and print the clothing 
+suggestion based on the temperature 
+3. Use the following logic for clothing suggestion:  
+If temperature is above 35°C Print: wear light cotton clothes  
+◦ If temperature is between 20°C and 35°C Pint: Normal casual wear  
+○ If temperature is between 10°C and 19°C Print: Wear a jacket  
+○ If temperature is below 10°C Print: stay indoors, it's too cold! Run the script 
+using: node weather.js  
+Test Cases to Try: • temperature = 40 • temperature = 28 . temperature- 15  
+
+Assignment5:  
+Problem: Create a Javascript that checks whether the given username and 
+password match the predefined login credentials using simple variables 
+Instructions:  
+1. Greate a new file named login.js.  
+2. Inside the file, do the following: Declare two variables for user input: let 
+enteredUsername = "Priyanka"; // Keep changing  
+let enteredPassword = "Nigade":;//Keep changing (Change "some _ value" to 
+simulate different test cases.)  
+Declare two predefined credentials:  
+const correctusername = "admin@emalil.com",  
+const correctPassword = "admin@123";  
+3. Use an if...else statement to compare: If both enteredusername and 
+enteredPassword match the correct credentials, print: Login Successful 
+Otherwise, print: Invalid credentials Run the script using: node login.js
+
+===============================================================
+Loop Assignments
+========================
+1.Prime Number
+Problem Statement:
+Write a JavaScript program to check whether a given number is prime or not using a loop.
+
+2.Print Even Numbers
+Problem Statement:
+Write a JavaScript program to print all even numbers between 1 and 50 using a loop.
+
+3.Multiplication Table
+Problem Statement:
+Write a JavaScript program that accepts a number and prints its multiplication table from 1 to 10.
+
+4.Factorial Number
+Problem Statement:
+Write a JavaScript program to calculate the factorial of a given positive integer using a loop.
+
+5.Count Digits
+Problem Statement:
+Write a JavaScript program to count the total number of digits present in a given number using a loop.
+
+6.Stop the Loop at a Specific Number
+Problem Statement:
+Write a JavaScript program to print numbers from 1 to 20. Use the break statement to terminate the loop when the number reaches 10.
+
+7.Skip Even Numbers
+Problem Statement:
+Write a JavaScript program to print numbers from 1 to 20, but skip all even numbers using the continue statement.
+
+8.Print a 5 × 5 Star Pattern
+Problem Statement:
+Write a JavaScript program using nested loops to print a square containing 5 rows and 5 columns of stars.
+*****
+*****
+*****
+*****
+*****
+
+9.Decreasing Star Pattern
+Problem Statement:
+Write a JavaScript program using nested loops to print the following pattern:
+
+*****
+****
+***
+**
+*
+
+===========================================
+Array Scenario Based Questions
+===================================
+Scenario-Based JavaScript Array Questions 
+
+1. Employee Management System 
+Scenario: 
+A company stores employee names in an array. 
+Question: 
+Declare an array with employee names "Rahul", "Priya", "Amit" and 
+perform the following operations: 
+1. Add "Sneha" to the employee list  
+2. Remove the last employee from the list  
+3. Add "Manager" at the beginning of the list  
+4. Remove the first employee from the list 
+
+2. Shopping Cart Application 
+Scenario: 
+An e-commerce website manages products in a shopping cart. 
+Question: 
+Declare an array with "Mobile", "Laptop", "Mouse" and: 
+1. Add "Keyboard" to the cart  
+2. Display all products in reverse order  
+3. Convert all cart items into a single string separated by " | "  
+
+3. Browser Tabs Automation 
+Scenario: 
+A browser automation framework tracks currently opened tabs. 
+Question: 
+Declare an array with "Google", "YouTube", "ChatGPT" and: 
+1. Close the last opened tab  
+2. Add "GitHub" as the first tab  
+3. Display tabs in reverse order  
+
+4. Food Delivery Orders 
+Scenario: 
+A food delivery application maintains current orders. 
+Question: 
+Declare an array with "Pizza", "Burger", "Pasta" and: 
+1. Add "Sandwich" to the orders  
+2. Remove the first order  
+3. Display all orders as a comma-separated string  
+
+5. Student Attendance System 
+Scenario: 
+A school application maintains student attendance. 
+Question: 
+Declare an array with "Ankit", "Riya", "Karan" and: 
+1. Add "Neha" at the beginning  
+2. Remove the last student from the list  
+3. Create a separate copy of the attendance list 
+
+6. QA Test Case Management 
+Scenario: 
+A QA engineer stores executed test cases. 
+Question: 
+Declare an array with "LoginTest", "PaymentTest", "SearchTest" and: 
+1. Create another copy of the same array  
+2. Extract only the first 2 test cases  
+3. Display test cases in reverse order  
+
+7. Movie Recommendation App 
+Scenario: 
+A movie application stores recommended movies. 
+Question: 
+Declare an array with "Inception", "Avatar", "Titanic" and: 
+1. Add "Interstellar" to the movie list  
+2. Replace "Titanic" with "Jawan"  
+3. Convert all movie names into a single string separated by "-"  
+
+8. Product Inventory Management 
+Scenario: 
+An admin manages product inventory. 
+Question: 
+Declare an array with "Mobile", "Laptop", "Tablet", "Camera" and: 
+1. Remove "Tablet" from inventory  
+2. Add "Smart Watch" after "Laptop"  
+3. Create a duplicate copy of updated inventory  
+
+9. Online Course Platform 
+Scenario: 
+An online learning platform stores enrolled courses. 
+Question: 
+Declare an array with "JavaScript", "Playwright", "Cypress" and: 
+1. Remove the first course  
+2. Add "TypeScript" at the beginning  
+3. Extract only the last 2 courses  
+
+10. Music Playlist Application 
+Scenario: 
+A music app stores favorite songs. 
+Question: 
+Declare an array with "Song1", "Song2", "Song3" and: 
+1. Display playlist in reverse order  
+2. Remove the last song  
+3. Add "NewSong" at the beginning  
+4. Convert playlist into a single string  
+
+11. Bug Tracking System 
+Scenario: 
+A software team tracks bugs using arrays. 
+Question: 
+Declare an array with "Bug101", "Bug102", "Bug103" and: 
+1. Add "Bug104"  
+2. Remove "Bug102"  
+3. Create a copy of the bug list  
+
+12. Daily Tasks Planner 
+Scenario: 
+A task planner application stores daily tasks. 
+Question: 
+Declare an array with "Wake Up", "Exercise", "Study" and: 
+1. Add "Meeting" to the task list  
+2. Remove the first task  
+3. Reverse all tasks  
+4. Display all tasks in a single string separated by " -> " 
+
+13. Mobile Contacts List 
+Scenario: 
+A mobile app stores contact names. 
+Question: 
+Declare an array with "Ram", "Shyam", "Mohan" and: 
+1. Add "Sita" at the beginning  
+2. Remove the last contact  
+3. Extract only the first 2 contacts  
+
+14. Sports Team Selection 
+Scenario: 
+A coach manages selected players. 
+Question: 
+Declare an array with "Virat", "Rohit", "Gill" and: 
+1. Add "Hardik" to the team  
+2. Replace "Gill" with "KL Rahul"  
+3. Display players in reverse order  
+
+15. Real-Time Automation Framework Scenario 
+Scenario: 
+An automation framework stores failed test names. 
+Question: 
+Declare an array with "LoginFail", "CheckoutFail", "SearchFail" and: 
+1. Add "ProfileFail"  
+2. Remove the first failed test  
+3. Create another copy of the failed tests array  
+4. Extract only the first 2 failed tests  
+5. Replace "CheckoutFail" with "PaymentFail"  
+6. Convert all failures into a single comma-separated string
+
+
+
+
+===========================================
+Array Scenario Based Questions
+===================================
+Scenario-Based JavaScript Array Questions 
+
+ 1.⁠ ⁠Employee Management System 
+Scenario: 
+A company stores employee names in an array. 
+Question: 
+Declare an array with employee names "Rahul", "Priya", "Amit" and 
+perform the following operations: 
+ 1.⁠ ⁠Add "Sneha" to the employee list  
+ 2.⁠ ⁠Remove the last employee from the list  
+ 3.⁠ ⁠Add "Manager" at the beginning of the list  
+ 4.⁠ ⁠Remove the first employee from the list 
+
+ 2.⁠ ⁠Shopping Cart Application 
+Scenario: 
+An e-commerce website manages products in a shopping cart. 
+Question: 
+Declare an array with "Mobile", "Laptop", "Mouse" and: 
+ 1.⁠ ⁠Add "Keyboard" to the cart  
+ 2.⁠ ⁠Display all products in reverse order  
+ 3.⁠ ⁠Convert all cart items into a single string separated by " | "  
+
+ 3.⁠ ⁠Browser Tabs Automation 
+Scenario: 
+A browser automation framework tracks currently opened tabs. 
+Question: 
+Declare an array with "Google", "YouTube", "ChatGPT" and: 
+ 1.⁠ ⁠Close the last opened tab  
+ 2.⁠ ⁠Add "GitHub" as the first tab  
+ 3.⁠ ⁠Display tabs in reverse order  
+
+ 4.⁠ ⁠Food Delivery Orders 
+Scenario: 
+A food delivery application maintains current orders. 
+Question: 
+Declare an array with "Pizza", "Burger", "Pasta" and: 
+ 1.⁠ ⁠Add "Sandwich" to the orders  
+ 2.⁠ ⁠Remove the first order  
+ 3.⁠ ⁠Display all orders as a comma-separated string  
+
+ 5.⁠ ⁠Student Attendance System 
+Scenario: 
+A school application maintains student attendance. 
+Question: 
+Declare an array with "Ankit", "Riya", "Karan" and: 
+ 1.⁠ ⁠Add "Neha" at the beginning  
+ 2.⁠ ⁠Remove the last student from the list  
+ 3.⁠ ⁠Create a separate copy of the attendance list 
+
+ 6.⁠ ⁠QA Test Case Management 
+Scenario: 
+A QA engineer stores executed test cases. 
+Question: 
+Declare an array with "LoginTest", "PaymentTest", "SearchTest" and: 
+ 1.⁠ ⁠Create another copy of the same array  
+ 2.⁠ ⁠Extract only the first 2 test cases  
+ 3.⁠ ⁠Display test cases in reverse order  
+
+ 7.⁠ ⁠Movie Recommendation App 
+Scenario: 
+A movie application stores recommended movies. 
+Question: 
+Declare an array with "Inception", "Avatar", "Titanic" and: 
+ 1.⁠ ⁠Add "Interstellar" to the movie list  
+ 2.⁠ ⁠Replace "Titanic" with "Jawan"  
+ 3.⁠ ⁠Convert all movie names into a single string separated by "-"  
+
+ 8.⁠ ⁠Product Inventory Management 
+Scenario: 
+An admin manages product inventory. 
+Question: 
+Declare an array with "Mobile", "Laptop", "Tablet", "Camera" and: 
+ 1.⁠ ⁠Remove "Tablet" from inventory  
+ 2.⁠ ⁠Add "Smart Watch" after "Laptop"  
+ 3.⁠ ⁠Create a duplicate copy of updated inventory  
+
+ 9.⁠ ⁠Online Course Platform 
+Scenario: 
+An online learning platform stores enrolled courses. 
+Question: 
+Declare an array with "JavaScript", "Playwright", "Cypress" and: 
+ 1.⁠ ⁠Remove the first course  
+ 2.⁠ ⁠Add "TypeScript" at the beginning  
+ 3.⁠ ⁠Extract only the last 2 courses  
+
+10.⁠ ⁠Music Playlist Application 
+Scenario: 
+A music app stores favorite songs. 
+Question: 
+Declare an array with "Song1", "Song2", "Song3" and: 
+ 1.⁠ ⁠Display playlist in reverse order  
+ 2.⁠ ⁠Remove the last song  
+ 3.⁠ ⁠Add "NewSong" at the beginning  
+ 4.⁠ ⁠Convert playlist into a single string  
+
+11.⁠ ⁠Bug Tracking System 
+Scenario: 
+A software team tracks bugs using arrays. 
+Question: 
+Declare an array with "Bug101", "Bug102", "Bug103" and: 
+ 1.⁠ ⁠Add "Bug104"  
+ 2.⁠ ⁠Remove "Bug102"  
+ 3.⁠ ⁠Create a copy of the bug list  
+
+12.⁠ ⁠Daily Tasks Planner 
+Scenario: 
+A task planner application stores daily tasks. 
+Question: 
+Declare an array with "Wake Up", "Exercise", "Study" and: 
+ 1.⁠ ⁠Add "Meeting" to the task list  
+ 2.⁠ ⁠Remove the first task  
+ 3.⁠ ⁠Reverse all tasks  
+ 4.⁠ ⁠Display all tasks in a single string separated by " -> " 
+
+13.⁠ ⁠Mobile Contacts List 
+Scenario: 
+A mobile app stores contact names. 
+Question: 
+Declare an array with "Ram", "Shyam", "Mohan" and: 
+ 1.⁠ ⁠Add "Sita" at the beginning  
+ 2.⁠ ⁠Remove the last contact  
+ 3.⁠ ⁠Extract only the first 2 contacts  
+
+14.⁠ ⁠Sports Team Selection 
+Scenario: 
+A coach manages selected players. 
+Question: 
+Declare an array with "Virat", "Rohit", "Gill" and: 
+ 1.⁠ ⁠Add "Hardik" to the team  
+ 2.⁠ ⁠Replace "Gill" with "KL Rahul"  
+ 3.⁠ ⁠Display players in reverse order  
+
+15.⁠ ⁠Real-Time Automation Framework Scenario 
+Scenario: 
+An automation framework stores failed test names. 
+Question: 
+Declare an array with "LoginFail", "CheckoutFail", "SearchFail" and: 
+ 1.⁠ ⁠Add "ProfileFail"  
+ 2.⁠ ⁠Remove the first failed test  
+ 3.⁠ ⁠Create another copy of the failed tests array  
+ 4.⁠ ⁠Extract only the first 2 failed tests  
+ 5.⁠ ⁠Replace "CheckoutFail" with "PaymentFail"  
+ 6.⁠ ⁠Convert all failures into a single comma-separated string
+
+String Assignments
+=======================
+Assignment1: 
+Problem: 
+Count the number of words in a sentence. 
+Input: “I am learning javascript” 
+Output: 4 
+
+
+
+Assignment2: 
+Problem: 
+Remove duplicate characters from a string. 
+Input: “Programming” 
+Output:Progamin 
+
+Assignment3: 
+Problem: 
+Capitalize the first letter of a string. 
+Input: “javascript” 
+Output: “Javascript” 
+
+Assignment4: 
+Problem: 
+Remove all spaces from a string. 
+Input: “Welcome to learn playwright” 
+Output:”Welcometolearnplaywright” 
+
+Assignment5: 
+Problem: 
+Find the number of characters in a string with and without using length. 
+
+Assignment6: 
+Problem: 
+Count the number of vowels in a string. 
+Input:”Javascript” 
+Output: 3
+
+Assignment7: 
+Problem: 
+Reverse a string with & without using the built-in reverse() method.
+Hint: Through array you can apply reverse()

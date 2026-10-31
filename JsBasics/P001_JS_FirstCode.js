@@ -5,6 +5,16 @@ console.log("Hello World!"); // This is a single line comment
 
 /*
 
+ to check node and npm version 
+ ------------------------------
+  
+rajeshgounivari@Mac JavaScriptForAutomation2026 % node -v
+v24.19.0
+rajeshgounivari@Mac JavaScriptForAutomation2026 % npm -v
+11.17.0
+rajeshgounivari@Mac JavaScriptForAutomation2026 % 
+
+
 
 Varibale: 
 Varibale is a container that holds data values. In JavaScript, we can declare a variable using the keywords var, let, or const.
