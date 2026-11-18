@@ -1,8 +1,7 @@
 //how to copy Object to other Object?
 // by using spread operator , object can be copy into another object
 
-
-const student={
+let  student={
     sid:111,
     sname:"Raj",
     subject: "JavaScript"
@@ -10,8 +9,9 @@ const student={
 
 console.log(student);
 
-const classteacher={
+let classteacher={
     teachername:"Priyanka",
+
     ...student,
 
 }
@@ -38,4 +38,7 @@ let studentTeacherdetails ={
 console.log(studentTeacherdetails);
 
 
+
+
+export let testdata="Payment";
 
